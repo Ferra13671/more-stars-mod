@@ -1,0 +1,29 @@
+project.group = "com.ferra13671"
+
+base {
+    archivesName = project.ext.projectName
+}
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    mappings "net.fabricmc:yarn:${project.yarn_mappings}:v2"
+    minecraft "com.mojang:minecraft:${project.ext.minecraftVersion}"
+    modImplementation "net.fabricmc:fabric-loader:${project.ext.loaderVersion}"
+}
+
+processResources {
+    inputs.property "version", project.main_version
+    inputs.property "minecraft_version", project.minecraft_version
+    inputs.property "loader_version", project.loader_version
+    filteringCharset "UTF-8"
+
+    filesMatching("fabric.mod.json") {
+        expand "version": project.main_version,
+                "minecraft_version": project.minecraft_version,
+                "loader_version": project.loader_version
+    }
+}
