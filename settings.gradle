@@ -9,6 +9,7 @@ pluginManagement {
     }
 }
 
+include "fabric:1_20"
 include "fabric:1_21_1"
 include "fabric:1_21_2"
 include "fabric:1_21_4"
