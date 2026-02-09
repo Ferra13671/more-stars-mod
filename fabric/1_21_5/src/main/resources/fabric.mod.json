@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "more-stars",
+  "version": "${version}",
+  "name": "More Stars",
+  "description": "A Minecraft mod that changes the size and number of stars in the night sky.",
+  "authors": ["ferra13671"],
+  "contact": {
+    "repo": ""
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+    "more-stars.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": ">=1.21.5"
+  }
+}

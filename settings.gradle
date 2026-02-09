@@ -9,4 +9,4 @@ pluginManagement {
     }
 }
 
-include "fabric:1_21_11"
+include "fabric:1_21_5"
