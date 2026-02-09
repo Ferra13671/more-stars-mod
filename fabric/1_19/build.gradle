@@ -1,0 +1,11 @@
+plugins {
+    id 'java-library'
+    id 'net.fabricmc.fabric-loom-remap' version '1.14-SNAPSHOT'
+}
+
+project.ext.projectName = "more-stars"
+project.ext.minecraftVersion = project.minecraft_version
+project.ext.loaderVersion = project.loader_version
+version = "${project.minecraft_version}-fabric-${project.main_version}"
+
+apply from: rootProject.file("fabric/fabric-script.gradle")
